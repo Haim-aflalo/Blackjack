@@ -33,6 +33,7 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Python.deck.executor": "Run",
     "Python.game_logic.executor": "Run",
+    "Python.player_io.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
