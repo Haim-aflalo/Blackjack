@@ -7,4 +7,3 @@ def build_standard_deck() -> list[dict]:
             card = {"rank": val[j], "suite": color[i]}
             deck.append(card)
     return deck
-
