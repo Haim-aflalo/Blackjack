@@ -1,6 +1,3 @@
-from core.deck import build_standard_deck
-
-
 def calculate_hand_value(hand: list[dict]) -> int:
     hand_points = 0
     val = {"A":1,"J":10,"Q":10,"K":10}
@@ -24,18 +21,17 @@ def deal_two_each(deck: list[dict], player: dict, dealer: dict) -> None:
     dealer_hand = calculate_hand_value(dealer["hand"])
     print(player_hand,dealer_hand)
 
+
 def dealer_play(deck: list[dict], dealer: dict) -> bool:
     score = 0
     while True:
         dealer_card = deck.pop(0)
         score += calculate_hand_value([dealer_card])
         if score <= 17:
-            print("a")
             continue
         if score > 21:
             print("the dealer loose")
             return False
         if 18 < score < 21:
-            print(2)
             return True
 
